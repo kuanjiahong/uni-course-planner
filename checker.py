@@ -1,4 +1,5 @@
 '''
+This program is written in Python ver 3.9.6
 This is a python program that is used to check for eligible 
 HKU Comp Elective courses based on the courses taken by 
 the student
