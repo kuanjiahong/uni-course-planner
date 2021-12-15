@@ -1,0 +1,27 @@
+Course Code,Course Name,Prerequisite,Mutually Exclusive
+COMP2501,Introduction to data science and engineering,COMP1117 or ENGG1330,STAT1005 or STAT1015
+COMP3231,Computer Architecture,COMP2120,
+COMP3258,Functional Programming,COMP2121,
+COMP3259,Principles of Programming Language,COMP2119 or FITE2000,
+COMP3270,Artificial Intelligence,COMP2119 or FITE2000,ELEC4544 or IIMT3688
+COMP3271,Computer Graphics,COMP2119,
+COMP3314,Machine Learning,COMP2119 or ELEC2543 or FITE2000; and MATH1853 or MATH2101,
+COMP3316,Quantum Information and Computation,MATH1853 or MATH2101,
+COMP3317,Computer Vision,COMP2119; and MATH1853 or MATH2101,
+COMP3320,Electronic Commerce Technology,COMP3278,
+COMP3322,Modern Technologies on World Wide Web,COMP1117 or ENGG1111 or ENGG1112 or ENGG1330,IIMT3663
+COMP3329,Computer Game Design and Programming,COMP2113 or COMP2123 or ENGG1340,
+COMP3330,Interactive Mobile Application Design and Programming,COMP2396 or FITE2000,
+COMP3340,Applied Deep Learning,COMP2119 or ELEC2543 or FITE2000; and MATH1853,
+COMP3352,Algorithmic Game Theory,MATH1853 or MATH2101; and COMP2119,
+COMP3355,Cyber Security,COMP2119 or ELEC2543 or FITE2000,ELEC4641
+COMP3356,Robotics,MATH1853 or MATH2014; and COMP2121 or STAT2601; and COMP2119 or FITE2000,
+COMP3357,Cryptography,MATH1853 or MATH2101,
+COMP3358,Distributed and Parallel Computing,COMP3230 or COMP3234,
+COMP3360,Data-driven computer animation,COMP2119,
+COMP3361,Natural Language Processing,COMP3114 or COMP3340; and MATH1853,
+COMP3362,Hands-on AI: experimentation & applications,COMP3314,COMP3359
+COMP3407,Scientific Computing,COMP1117 or ENGG1111 or ENGG1112 or ENGG1330; and COMP2121,
+FITE2010,Distributed Ledger and Blockchain,FITE1010 or MATH1853 or MATH2101; and COMP2119 or ELEC2543 or FITE2000,
+FITE3010,Big Data and Mining,FITE1010 or MATH1853 or MATH2101; and COMP2119 or ELEC2543 or FITE2000,
+FITE3012,E-payment and Crypto-currency,FITE1010 or MATH1853 or MATH2101; and COMP2119 or ELEC2543 or FITE2000,
