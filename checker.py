@@ -102,6 +102,40 @@ def check_course(pre_ls, course_taken):
     return True
 
 
+def check_mutual(mutual_courses, course_taken):
+    '''
+    This function check if the student has
+    taken any mutually exclusive course
+    If yes, then the student cannot take
+    the elective
+    else, the student can take the elective
+
+    mutual_ls: a string of mutually exclusive course
+    course_taken: a list of course taken by the student
+
+    True: the course is mutually exclusive with one of the course
+    the student has taken
+
+    False: the course is not mutually exclusive with one 
+    of the course the student has taken
+
+    '''
+    if not mutual_courses:
+        # Return False if the list is empty
+        return False
+
+    mutual_courses = mutual_courses.split("or")
+    for i in range(len(mutual_courses)):
+        mutual_courses[i] = mutual_courses[i].strip()
+    
+    for c in course_taken:
+        if c in mutual_courses:
+            return True
+    
+    return False
+
+
+
 # File names variable
 course_taken_filename = "csv-course-taken.csv"
 course_i_can_take_filename = "csv-course-i-can-take.csv"
@@ -132,7 +166,10 @@ with open(elective_filename, newline='', encoding="utf-8") as csvfile:
         # The len of prereq indicates how many "AND" requirement there is
         # for the elective course
         prereq = clean_word(row['Prerequisite'].split("and"))
-        if check_course(prereq, my_course):
+
+        mutual_course = row['Mutually Exclusive']
+
+        if check_course(prereq, my_course) and not check_mutual(mutual_course, my_course):
             with open(course_i_can_take_filename, 'a', newline="") as write_file:
                 # Open file in append mode and write the eligible course inside it
                 fieldnames = ['Course Code', 'Course Name']
