@@ -9,6 +9,6 @@ This is a program to help HKU students to check which CS elective course they ca
 
 References:
 
-[HKU CS Courses Offered](https://www.cs.hku.hk/programmes/course-offered)
+[HKU CS Courses Offered 2021-2022](https://www.cs.hku.hk/programmes/course-offered)
 
 [Python CSV](https://docs.python.org/3/library/csv.html)
